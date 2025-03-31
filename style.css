@@ -74,7 +74,7 @@ body {
 }
 
 .cabecalho {
-    max-height: 100%;
+    height: 100vh;
     margin-top: 70px;
     display: flex;
     justify-content: center;
@@ -82,28 +82,76 @@ body {
     flex-direction: column;
 }
 
-.titulo {
-    font-size: 5rem;
-    font-family: var(--font-gotic);
-    font-weight: lighter;
-}
-
 .logo {
-    width: 250px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    position: relative;
+    width: 500px;
+    border-radius: 50%;  
+    margin-bottom: 350px;
     box-shadow: 0px 0px 20px #fff;
+    animation: animarLogo 7s linear infinite;
 }
 
 .foto-canguru {
-    height: 500px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 50px;
+    height: 650px;
     border-radius: 10px;
 }
 
-.sub-titulo {
-
+.titulo {
+    position: absolute;
+    top: 90%;
+    font-size: 5rem;
+    font-family: var(--font-gotic);
+    font-weight: lighter;
+    color: #0D0D0D;
+    text-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0px 0px 30px #fff;
+    z-index: 1;
 }
 
-.paragrafo {
 
+.sub-titulo {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3em;
+    font-family: var(--font-destaque);
+    font-weight: lighter;
+}
+
+.box-paragrafo {
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    background-color: #59595999; 
+    box-shadow: 0px 0px 5px var(--cor2);
+}
+.paragrafo {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.frase-efeito {
+    text-align: center;
+    font-family: var(--font-destaque);
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+@keyframes animarLogo {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
