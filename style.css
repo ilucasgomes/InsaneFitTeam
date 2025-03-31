@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Smooch+Sans:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: BlackMustang;
+    src: url(fonts/Black\ Mustang.ttf);
+}
+:root {
+    --cor0: white;
+    --cor1: #D9D9D9;
+    --cor2: #A6A6A6;
+    --cor3: #595959;
+    --cor4: #262626;
+    --cor5: #0D0D0D;
+    --cor6: black;
+
+    --font-destaque: 'Bebas Neue';
+    --font-gotic: 'BlackMustang';
+    --font-padrao: 'Arial', Verdana, Helvetica, Sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0D0D0D;
+}
+
+.navegacao {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 15px;
+    background-color: rgba(13, 13, 13, 0.859);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu-link {
+    padding: 5px;
+    text-decoration:  none;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 3px #fff;
+    position: relative;
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #D9D9D9, #595959);
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.cabecalho {
+    max-height: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 5rem;
+    font-family: var(--font-gotic);
+    font-weight: lighter;
+}
+
+.logo {
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px #fff;
+}
+
+.foto-canguru {
+    height: 500px;
+    border-radius: 10px;
+}
+
+.sub-titulo {
+
+}
+
+.paragrafo {
+
+}
