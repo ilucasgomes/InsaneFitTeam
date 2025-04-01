@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-    
+
+.menu {
+    gap: 3rem;
+}
+
+.cabecalho {
+    margin-top: 7%;
+}
+
+.foto-canguru {
+    height: 400px;
+}
+
+.box-paragrafo {
+    max-width: 600px;
+}
+
+
 }
