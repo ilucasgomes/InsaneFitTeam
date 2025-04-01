@@ -19,9 +19,6 @@
     --font-padrao: 'Arial', Verdana, Helvetica, Sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-
-
 * {
     margin: 0px;
     padding: 0px;
@@ -68,7 +65,7 @@ body {
 .menu-link {
     padding: 5px;
     text-decoration:  none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-shadow: 0px 0px 3px #fff;
     position: relative;
 }
@@ -109,13 +106,13 @@ body {
 .foto-canguru {
     position: absolute;
     display: inline-block;
-    margin-top: 47%;
-    height: 550px;
+    bottom: 0;
+    height: 450px;
 }
 
 .titulo {
     position: absolute;
-    top: 92%;
+    bottom: 0;
     font-size: 4rem;
     font-weight: lighter;
     font-family: var(--font-gotic);
@@ -125,7 +122,7 @@ body {
 }
 
 .sub-titulo {
-    margin-top: 20%;
+    margin-top: 20px;
     text-align: center;
     font-size: 3em;
     font-family: var(--font-destaque);
@@ -135,7 +132,7 @@ body {
 .box-paragrafo {
     position: relative;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 400px;
     padding: 20px;
     border: 1px solid #595959;
     border-radius: 10px;
@@ -167,5 +164,4 @@ footer {
     50% {
         transform: translateY(-20px);
     }
-}
 }
