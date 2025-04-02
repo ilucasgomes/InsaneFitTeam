@@ -7,11 +7,20 @@
 }
 
 .cabecalho {
-    margin-top: 7%;
+    margin-top: 5%;
+}
+
+.logo {
+    margin-top: 2%;
+    width: 500px;
 }
 
 .foto-canguru {
-    height: 400px;
+    height: 60%;
+}
+
+.sobre {
+    margin-top: 7%;
 }
 
 .box-paragrafo {
